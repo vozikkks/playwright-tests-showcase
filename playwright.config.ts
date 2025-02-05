@@ -44,11 +44,10 @@ export default defineConfig({
     {
       //setup will run sucessfuly before running the other tests because of dependencies: ["setup"]
       name: "setup",
-      testMatch: "/.*.setup.ts/",
+      testMatch: "**/*.spec.ts",
     },
     {
       name: "chromium",
-      dependencies: ["setup"],
       use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read"] },
     }
 
