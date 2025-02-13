@@ -50,9 +50,11 @@ export default defineConfig({
       testMatch: "**/*.setup.ts",
     },
     {
-      name: "chromium",
+      name: "chromium-linux",
       dependencies: ["setup"],
-      use: { ...devices["Desktop Chrome"], permissions: ["clipboard-read"] },
+      use: {
+        browserName: "chromium",
+         ...devices["Desktop Chrome"], permissions: ["clipboard-read"] },
     }
 
     // {
