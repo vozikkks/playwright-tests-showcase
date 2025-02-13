@@ -4,4 +4,3 @@ test-results/
 .auth/
 playwright/.cache
 .DS_Store
-tests/home.spec.ts-snapshots
