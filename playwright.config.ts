@@ -50,7 +50,7 @@ export default defineConfig({
       testMatch: "**/*.setup.ts",
     },
     {
-      name: "chromium-linux",
+      name: "chromium",
       dependencies: ["setup"],
       use: {
         browserName: "chromium",
